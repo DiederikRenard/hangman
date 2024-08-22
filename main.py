@@ -6,6 +6,7 @@ def random_word():
         contents = file.readlines()
         return choice(contents)
 
+
 hangman = [
         f"""_______
 |      |
@@ -65,7 +66,7 @@ def run_game():
     word = random_word().strip()
     letters_in_word: list = ['_' for letter in word]
 
-    print(word)
+    # print(word)
     print(hangman[0])
 
     lives = 6
